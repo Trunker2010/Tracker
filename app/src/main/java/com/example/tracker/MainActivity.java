@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private LocationService locationService;
     private boolean bound = false;
     private final int PERMISSION_REQUEST_CODE = 699;
-    private final int NOTIFICATION_ID = 424;
+    private final int NOTIFICATION_ID = 424;///
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
