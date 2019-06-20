@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tracker</string>
+    <string name="spd">Km/h</string>
+    <string name="AvSpd">Avg speed</string>
+    <string name="MaxSpd">Max speed</string>
+    <string name="MinKm">Min per KM</string>
+    <string name="Altitude">Altitude</string>
+    <string name="btnStart">Start</string>
+    <string name="btnStop">Stop</string>
+    <string name="noParams">----</string>
+    <string name="permission_denied">Location permission required</string>
+</resources>

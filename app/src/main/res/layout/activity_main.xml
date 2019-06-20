@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+
+        android:id="@+id/spdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="end"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:text="@string/noParams"
+            android:id="@+id/val_spd_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/digital7"
+            android:textColor="#000000"
+            android:textSize="118sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/digital7"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="@string/spd"
+            android:textColor="#000000"
+            android:textSize="38sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/spdLayout"
+        tools:layout_editor_absoluteX="16dp">
+
+        <LinearLayout
+
+            android:padding="8sp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:fontFamily="@font/digital7"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance" />
+            <TextView
+                android:id="@+id/distanceTxtView"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:fontFamily="@font/digital7"
+                android:textSize="38sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/noParams" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="8sp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:fontFamily="@font/digital7"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accuracy" />
+
+            <TextView
+                android:id="@+id/accuracyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:gravity="center_horizontal"
+                android:text="@string/noParams"
+                android:textColor="#000000"
+                android:textSize="38sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="8sp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:fontFamily="@font/digital7"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Duration" />
+            <TextView
+                android:id="@+id/durationTxtView"
+                android:gravity="center_horizontal"
+                android:textColor="#000000"
+                android:fontFamily="@font/digital7"
+                android:textSize="38sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/noParams" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/AvSpd"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/AvSpd_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/noParams"
+                android:textColor="#000000"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/MaxSpd"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/MaxSpd_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/noParams"
+                android:textColor="#000000"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/MinKm"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/MinKm_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/noParams"
+                android:textColor="#000000"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/Altitude"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/Altitude_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/digital7"
+                android:text="@string/noParams"
+                android:textColor="#000000"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <Button
+            android:id="@+id/btnStart"
+
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickStart"
+            android:padding="8dp"
+            android:text="@string/btnStart" />
+
+        <Button
+
+            android:id="@+id/btnStop"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:onClick="onClickStop"
+            android:padding="8dp"
+            android:text="@string/btnStop" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
