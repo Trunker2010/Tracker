@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     double maxSpd = 0.0;
     double accuracy = 0.0;
     double distance = 0.0;
-    private int seconds = 0;
+    private int seconds = 0;//
     boolean isRun;
     static Handler timerHandler = new Handler();
     static Handler locationParamsHandler = new Handler();
